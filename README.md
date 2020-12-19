@@ -1,1 +1,3 @@
-# nopaper
+![](docs/arquitectura.svg)
+
+> Arquitectura.
