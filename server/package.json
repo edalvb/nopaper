@@ -1,0 +1,38 @@
+{
+  "name": "nopaper-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist --source-maps",
+    "start": "nodemon src/index.js --exec babel-node",
+    "serve": "node dist/index.js",
+    "clean": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edalvb/nopaper-server.git"
+  },
+  "keywords": [],
+  "author": "Edward Alexis Vásquez Becerra edalvb@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edalvb/nopaper-server/issues"
+  },
+  "homepage": "https://github.com/edalvb/nopaper-server#readme",
+  "dependencies": {
+    "apollo-server": "^2.18.2",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.4.0",
+    "graphql-tools": "^7.0.1",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "nodemon": "^2.0.6"
+  }
+}
